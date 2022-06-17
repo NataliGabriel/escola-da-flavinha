@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Anotações";
+}
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+  	<title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="../css/style.css">
+
+	
+
+	</head>
+	<body class="img js-fullheight" style="background-image: url(../images/bg.jpg);">
+		<header>   @*
+			<img src="../images/quit.png" href="Index" style="float: right; width: 40px;" />*@
+			<div style="float: left; margin-top: 10px">
+				<a href="Index" class="fa fa-arrow-left" aria-hidden="true"></a>
+			</div>
+		</header>
+@*		<ul class="nav navbar-nav navbar-right">
+			<li><a href ="#">Olá @User.Identity.Name</a></li>
+		</ul>*@
+		<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<form asp-controller="Home" asp-action="Motivos" method="post">
+						<div style="font-size: 4rem; margin-top: -70px; margin-left: -10px">
+							<h2 class="heading-section" style="font: bold">Olá @ViewData["Nome"]! </h2>
+						</div>
+						</form>
+					<form asp-controller="Home" asp-action="Motivos" method="post">
+						<div style=" margin-top: 10px; margin-left: -10px">
+							<textarea readonly="readonly" id="anotacao" name="anotacao" @*class="form-control"*@ style="margin: auto; font:800; color: white; background-color: transparent; font-family: 'Dosis', sans-serif;" 
+							rows="15" cols="40" align="center">@ViewData["Anotacao"]</textarea></br>
+						</div>
+					</form>	
+				</div>
+			</div>@*
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-lg-4">
+					<div class="login-wrap p-0">
+		      	<h3 class="mb-4 text-center"></h3>
+		      	<form asp-controller="Home" asp-action="Login" method="post">
+		      			<div class="form-group">
+		      				<input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuário" required>
+		      			</div>
+					<div class="form-group">
+					  <input id="senha" name="senha" type="password" class="form-control" placeholder="Senha" required>
+					  <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+					</div>
+					<div class="form-group">
+	            		<button type="submit" class="form-control btn btn-primary submit px-3">Entrar</button>
+					</div>
+					<div class="form-group d-md-flex">
+	            		<div class="w-50">
+		            		<label class="checkbox-wrap checkbox-primary">Lembrar senha
+										  <input type="checkbox" checked>
+										  <span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="w-50 text-md-right">
+										<a href="#" style="color: #fff">Esqueci a Senha</a>
+									</div>
+	            </div>*@@*
+	         </form>
+	          *@
+		      </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="../js/jquery.min.js"></script>
+  <script src="../js/popper.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/main.js"></script>
+
+	</body>
+</html>
+
