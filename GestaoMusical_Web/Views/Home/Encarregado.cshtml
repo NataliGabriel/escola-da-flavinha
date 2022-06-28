@@ -36,7 +36,7 @@
 							<h2 class="heading-section" style="font: bold">Olá @ViewData["Nome"]! </h2>
 						</div>
 						
-@*		      	<form asp-controller="Home" asp-action="FiltroNome" method="post">
+		      	<form asp-controller="Home" asp-action="FiltroNome" method="post">
 					<div class="row">
 						<div class="col-md-9 col-sm-9">
 								<select id="aluna"  name="aluna" class="form-control-plaintext" style="height: 40px; color: #1f1916; background-color: #fbceb5; margin-bottom: 10px" asp-items="ViewBag.Lista"></select>
@@ -48,7 +48,7 @@
 									<input type="submit" style="margin-bottom: 10px" value="Pesquisar" class="btn btn-primary" />
 							</div>
 					</div>
-					 </form>*@
+					 </form>
 
 						</div>
 						<div class="row">
@@ -73,6 +73,12 @@
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/main.js"></script>
 
+		 <script>	
+			function MedidorSelecionado() {
+            var aluna = $('#Alunas').val();
+            location.href = "./Login/PesquisarAlunaId?IDaluna=" + aluna;
+			}
+		</script>
 
 	</body>
 </html>

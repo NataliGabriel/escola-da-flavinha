@@ -18,15 +18,15 @@ using Npgsql;
         {
             try
             {
-                //ConexaoBanco = new NpgsqlConnection("Server=localhost"
-                //+ ";Port=5432;Database=db_alunas"
-                //+ ";User Id=postgres;Password=postgres;");
-                //ConexaoBanco.Open();
+                //    ConexaoBanco = new NpgsqlConnection("Server=localhost"
+                //    + ";Port=5432;Database=db_alunas"
+                //    + ";User Id=postgres;Password=postgres;");
+                //    ConexaoBanco.Open();
 
                 ConexaoBanco = new NpgsqlConnection("Server=52.73.155.171"
                 + ";Port=5432;Database=du09dbs93d50e"
                 + ";User Id=qrayepwxuyemqv; Password=5e4e372c098fda0e8fdac14e57eaee218f53c8e8aa117b25634d65d12320d41f;");
-                ConexaoBanco.Open();
+            ConexaoBanco.Open();
             }
             catch
             { }
