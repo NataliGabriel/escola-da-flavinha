@@ -38,7 +38,7 @@ namespace GestaoMusical_Web.Controllers
         {
             //42808193866
             //11111111111
-            if (usuario != "André Rodrigues" && senha != "123")
+            if (usuario != "André Rodrigues" && senha != "encarregadovilalaurea")
             {
                 var CPF = senha.Substring(0, 3) + "," + senha.Substring(3, 3) + "," + senha.Substring(6, 3) + "-" + senha.Substring(9, 2);
 
@@ -55,7 +55,7 @@ namespace GestaoMusical_Web.Controllers
                     var user_menor = usuario.Split(" ");
                     ViewData["Nome"] = user_menor[0];
 
-                    scriptSQL = "SELECT * FROM sc_alunas.tb_anotacao WHERE id_alunas =" + ID;
+                    scriptSQL = "SELECT * FROM sc_alunas.tb_anotacao WHERE id_alunas =" + ID + " ORDER BY id_anotacao DESC limit 1";
                     RespostaSQL = banco.SelecionaDados(scriptSQL);
                     if (RespostaSQL.Rows.Count > 0)
                     {
