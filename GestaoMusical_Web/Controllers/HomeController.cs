@@ -93,7 +93,7 @@ namespace GestaoMusical_Web.Controllers
                 ViewData["Nome"] = "Irmão André";
                 
                 
-                var scriptSQL = "SELECT * FROM sc_alunas.tb_anotacao WHERE id_alunas =" + aluna;
+                var scriptSQL = "SELECT * FROM sc_alunas.tb_anotacao WHERE id_alunas =" + aluna + "ORDER BY id_anotacao DESC limit 1";
                 DataTable RespostaSQL = banco.SelecionaDados(scriptSQL);
                 if (RespostaSQL.Rows.Count > 0)
                 {
