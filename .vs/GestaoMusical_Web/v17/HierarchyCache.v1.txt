@@ -3,9 +3,9 @@ i:{00000000-0000-0000-0000-000000000000}:GestaoMusical_Web.sln
 ++GestaoMusical_Web
 i:{00000000-0000-0000-0000-000000000000}:GestaoMusical_Web
 ++Connected Services 
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:>1017
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:>1585
 ++Dependências
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:>1016
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:>1584
 ++Properties
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\properties\
 ++launchSettings.json
@@ -17,8 +17,8 @@ i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\g
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\bootstrap\dist\css\
 ++bootstrap
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\bootstrap\
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\scss\bootstrap\
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\bootstrap\
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\scss\bootstrap\
 ++bootstrap.min.css
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\bootstrap.min.css
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
@@ -26,19 +26,6 @@ i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\g
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\style.css
 ++images
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\images\
-++.DS_Store
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\images\.ds_store
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\bootstrap\.ds_store
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\scss\bootstrap\.ds_store
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\bootstrap\mixins\.ds_store
-++2.jpg
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\images\2.jpg
-++bg.jpg
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\images\bg.jpg
-++piano_icon.ico
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\images\piano_icon.ico
-++quit.png
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\images\quit.png
 ++js
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\js\
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\bootstrap\dist\js\
@@ -46,8 +33,6 @@ i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\g
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\
 ++scss
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\scss\
-++style.scss
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\scss\style.scss
 ++favicon.ico
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\favicon.ico
 ++Controllers
@@ -56,22 +41,34 @@ i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\g
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\controllers\homecontroller.cs
 ++Models
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\models\
+++Anotacao.cs
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\models\anotacao.cs
 ++Banco.cs
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\models\banco.cs
 ++ErrorViewModel.cs
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\models\errorviewmodel.cs
+++Login.cs
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\models\login.cs
 ++Views
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\views\
 ++Home
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\views\home\
 ++Anotacao.cshtml
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\views\home\anotacao.cshtml
+++Encarregado.cshtml
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\views\home\encarregado.cshtml
 ++Index.cshtml
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\views\home\index.cshtml
 ++Privacy.cshtml
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\views\home\privacy.cshtml
 ++Shared
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\views\shared\
+++_Layout.cshtml
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\views\shared\_layout.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\views\shared\_validationscriptspartial.cshtml
+++Error.cshtml
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\views\shared\error.cshtml
 ++_ViewImports.cshtml
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\views\_viewimports.cshtml
 ++_ViewStart.cshtml
@@ -81,7 +78,7 @@ i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\g
 ++Program.cs
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\program.cs
 ++Nenhuma dependência de serviço descoberta
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:>1018
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:>1586
 ++Analisadores
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:analisadores
 ++Estruturas
@@ -94,8 +91,23 @@ i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\g
 ++utilities
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\bootstrap\utilities\
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\scss\bootstrap\utilities\
+++.DS_Store
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\bootstrap\.ds_store
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\images\.ds_store
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\bootstrap\mixins\.ds_store
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\scss\bootstrap\.ds_store
 ++_media.css
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\bootstrap\_media.css
+++2.jpg
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\images\2.jpg
+++bg.jpg
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\images\bg.jpg
+++bg2.jpg
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\images\bg2.jpg
+++piano_icon.ico
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\images\piano_icon.ico
+++quit.png
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\images\quit.png
 ++bootstrap.min.js
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\js\bootstrap.min.js
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
@@ -114,6 +126,75 @@ i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\g
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery-validation\
 ++jquery-validation-unobtrusive
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery-validation-unobtrusive\
+++style.scss
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\scss\style.scss
+++_Layout.cshtml.css
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\views\shared\_layout.cshtml.css
+++appsettings.Development.json
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\appsettings.development.json
+++MessagePackAnalyzer
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\users\gabriel\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
+++Microsoft.AspNetCore.Analyzers
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.5\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.5\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+++Microsoft.CodeAnalysis.Analyzers
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\users\gabriel\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\users\gabriel\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.5\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.5\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\microsoft.netcore.app
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.5)
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:>1607
+++Npgsql (6.0.4)
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:>1608
+++Swashbuckle.AspNetCore (6.3.0)
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:>1606
+++_border-radius.css
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\bootstrap\mixins\_border-radius.css
+++_reset-text.css
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\bootstrap\mixins\_reset-text.css
+++_screen-reader.css
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\bootstrap\mixins\_screen-reader.css
+++_text-hide.css
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\bootstrap\mixins\_text-hide.css
+++_visibility.css
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\bootstrap\mixins\_visibility.css
+++_stretched-link.css
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\bootstrap\utilities\_stretched-link.css
+++dist
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\bootstrap\dist\
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery\dist\
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery-validation\dist\
+++LICENSE
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery\license.txt
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 ++vendor
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\scss\bootstrap\vendor\
 ++_alert.scss
@@ -203,77 +284,14 @@ i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\g
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\scss\bootstrap\bootstrap-grid.scss
 ++bootstrap-reboot.scss
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\scss\bootstrap\bootstrap-reboot.scss
-++_Layout.cshtml
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\views\shared\_layout.cshtml
-++_ValidationScriptsPartial.cshtml
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\views\shared\_validationscriptspartial.cshtml
-++Error.cshtml
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\views\shared\error.cshtml
-++appsettings.Development.json
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\appsettings.development.json
-++MessagePackAnalyzer
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\users\gabriel\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
-++Microsoft.AspNetCore.Analyzers
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
-++Microsoft.AspNetCore.App.Analyzers
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.5\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
-++Microsoft.AspNetCore.App.CodeFixes
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.5\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
-++Microsoft.AspNetCore.Components.Analyzers
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
-++Microsoft.AspNetCore.Mvc.Analyzers
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
-++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
-++Microsoft.CodeAnalysis.Analyzers
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\users\gabriel\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
-++Microsoft.CodeAnalysis.CSharp.Analyzers
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\users\gabriel\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
-++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
-++Microsoft.CodeAnalysis.NetAnalyzers
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
-++Microsoft.Extensions.Logging.Generators
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.5\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
-++Microsoft.NET.Sdk.Razor.SourceGenerators
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
-++System.Text.Json.SourceGeneration
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.5\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
-++Microsoft.AspNetCore.App
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\microsoft.aspnetcore.app
-++Microsoft.NETCore.App
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\microsoft.netcore.app
-++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.5)
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:>1030
-++Npgsql (6.0.4)
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:>1031
-++Swashbuckle.AspNetCore (6.3.0)
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:>1029
-++_border-radius.css
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\bootstrap\mixins\_border-radius.css
-++_reset-text.css
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\bootstrap\mixins\_reset-text.css
-++_screen-reader.css
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\bootstrap\mixins\_screen-reader.css
-++_text-hide.css
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\bootstrap\mixins\_text-hide.css
-++_visibility.css
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\bootstrap\mixins\_visibility.css
-++_stretched-link.css
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\css\bootstrap\utilities\_stretched-link.css
-++dist
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\bootstrap\dist\
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery\dist\
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery-validation\dist\
-++LICENSE
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\bootstrap\license
-++LICENSE.txt
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery\license.txt
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery-validation-unobtrusive\license.txt
-++LICENSE.md
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery-validation\license.md
-++jquery.validate.unobtrusive.js
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++jquery.js
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery\dist\jquery.js
+++additional-methods.js
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++jquery.validate.js
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.unobtrusive.min.js
+i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 ++_background-variant.scss
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\scss\bootstrap\mixins\_background-variant.scss
 ++_border-radius.scss
@@ -355,16 +373,6 @@ i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\g
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\scss\bootstrap\utilities\_text.scss
 ++_rfs.scss
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\scss\bootstrap\vendor\_rfs.scss
-++_Layout.cshtml.css
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\views\shared\_layout.cshtml.css
-++jquery.js
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery\dist\jquery.js
-++additional-methods.js
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery-validation\dist\additional-methods.js
-++jquery.validate.js
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery-validation\dist\jquery.validate.js
-++jquery.validate.unobtrusive.min.js
-i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 ++bootstrap.css
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\bootstrap\dist\css\bootstrap.css
 ++bootstrap-grid.css
@@ -455,5 +463,3 @@ i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\g
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
 ++bootstrap.esm.min.js.map
 i:{bb272eba-05f1-49ea-aa99-771482314a8b}:d:\webgestaomusical\gestaomusical_web\gestaomusical_web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
-++vfyxoz4t.giv~
-++pmcf41j1.dmq~

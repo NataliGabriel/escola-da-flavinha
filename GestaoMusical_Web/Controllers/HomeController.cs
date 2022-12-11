@@ -118,7 +118,7 @@ namespace GestaoMusical_Web.Controllers
                     {
                         Value = ListagemAlunas[i].IdAlunas.ToString(),
                         Text = ListagemAlunas[i].usuario
-                    }); ;
+                    });
                     if (alunaID == ListagemAlunas[i].IdAlunas)
                         ListagemAluna[i].Selected = true;
                 }
