@@ -4,77 +4,77 @@
 }
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-  	<title>Anotações</title>
+<head>
+    <title>Anotações</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-	<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7374116760887011"
-            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7374116760887011"
+     crossorigin="anonymous"></script>
 
-	</head>
-	<body class="img js-fullheight modal-dialog-scrollable" style="background-image: url(../images/bg.jpg); no-repeat center center fixed; overflow: hidden; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover;">
-		<header>   @*
-			<img src="../images/quit.png" href="Index" style="float: right; width: 40px;" />*@
-			<div style="float: left; margin-top: 10px">
-				<a href="Index" class="fa fa-arrow-left" aria-hidden="true"></a>
-			</div>
-		</header>
-@*		<ul class="nav navbar-nav navbar-right">
-			<li><a href ="#">Olá @User.Identity.Name</a></li>
-		</ul>*@
-		<section class="ftco-section">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-6 text-center mb-5"  style="padding-bottom: 0 !important; margin-bottom:0 !important ">
-						<div style="font-size: 4rem; margin-top: -70px; margin-left: -10px">
-							<h2 class="heading-section" style="font: bold">Olá @ViewData["Nome"]! </h2>
-						</div>
-						
-@*		      	<form asp-controller="Home" asp-action="FiltroNome" method="post">
-					<div class="row">
-						<div class="col-md-9 col-sm-9">
-								<select id="aluna"  name="aluna" class="form-control-plaintext" style="height: 40px; color: #1f1916; background-color: #fbceb5; margin-bottom: 10px" asp-items="ViewBag.Lista"></select>
-
-						</div>
-
-						</br>
-							<div class="col-md-3 col-sm-3">
-									<input type="submit" style="margin-bottom: 10px" value="Pesquisar" class="btn btn-primary" />
-							</div>
-					</div>
-					 </form>*@
-
-						</div>
-						<div class="row">
-							<div style=" padding-top: 5px; text-align: center">
-								<textarea readonly="readonly" id="anotacao" name="anotacao" @*class="form-control"*@ style="margin: auto; justify-content: center ;font:800; max-height: 65vh !important ; min-height: 65vh ;color: white; background-color: transparent; font-family: 'Dosis', sans-serif;" 
-								rows="13" cols="35" align="center">@ViewData["Anotacao"]</textarea>
-							</div>
-						</div>
-					
-				</div>
-			</div>
-
-			<footer class="border-top footer text-muted fixed-bottom">
-        <div class="container">
-            &copy; 2022 - Escola da Flavinha. 
+</head>
+<body class="img js-fullheight modal-dialog-scrollable" style="background-image: url(../images/bg.jpg); no-repeat center center fixed; overflow: hidden; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover;">
+    <header>
+        @*
+            <img src="../images/quit.png" href="Index" style="float: right; width: 40px;" />*@
+        <div style="float: left; margin-top: 10px">
+            <a href="Index" class="fa fa-arrow-left" aria-hidden="true"></a>
         </div>
-    </footer>
-	</section>
+    </header>
+    @*		<ul class="nav navbar-nav navbar-right">
+        <li><a href ="#">Olá @User.Identity.Name</a></li>
+        </ul>*@
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-5" style="padding-bottom: 0 !important; margin-bottom:0 !important ">
+                    <div style="font-size: 4rem; margin-top: -70px; margin-left: -10px">
+                        <h2 class="heading-section" style="font: bold">Olá @ViewData["Nome"]! </h2>
+                    </div>
 
-	<script src="../js/jquery.min.js"></script>
-  <script src="../js/popper.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
-  <script src="../js/main.js"></script>
+                    @*		      	<form asp-controller="Home" asp-action="FiltroNome" method="post">
+                        <div class="row">
+                        <div class="col-md-9 col-sm-9">
+                        <select id="aluna"  name="aluna" class="form-control-plaintext" style="height: 40px; color: #1f1916; background-color: #fbceb5; margin-bottom: 10px" asp-items="ViewBag.Lista"></select>
+
+                        </div>
+
+                        </br>
+                        <div class="col-md-3 col-sm-3">
+                        <input type="submit" style="margin-bottom: 10px" value="Pesquisar" class="btn btn-primary" />
+                        </div>
+                        </div>
+                        </form>*@
+
+                </div>
+                <div class="row">
+                    <div style=" padding-top: 5px; text-align: center">
+                        <textarea readonly="readonly" id="anotacao" name="anotacao" @*class="form-control"*@ style="margin: auto; justify-content: center ;font:800; max-height: 65vh !important ; min-height: 65vh ;color: white; background-color: transparent; font-family: 'Dosis', sans-serif;"
+                                  rows="13" cols="35" align="center">@ViewData["Anotacao"]</textarea>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="border-top footer text-muted fixed-bottom">
+            <div class="container">
+                &copy; 2022 - Escola da Flavinha.
+            </div>
+        </footer>
+    </section>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
 
 
-	</body>
+</body>
 </html>
 
