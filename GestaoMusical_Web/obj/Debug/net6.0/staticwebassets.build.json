@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4CDewuW1hE2VI22Sbb4QMySatksVPtkkwPBFZx/nGdQ=",
+  "Hash": "4VFxMfKWTb7WoThJIhcoZzj3re6TqV/1ZdY8ZxA/OgM=",
   "Source": "GestaoMusical_Web",
   "BasePath": "_content/GestaoMusical_Web",
   "Mode": "Default",
@@ -287,6 +287,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\2.jpg"
+    },
+    {
+      "Identity": "D:\\WebGestaoMusical\\GestaoMusical_Web\\GestaoMusical_Web\\wwwroot\\images\\3.jpg",
+      "SourceId": "GestaoMusical_Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebGestaoMusical\\GestaoMusical_Web\\GestaoMusical_Web\\wwwroot\\",
+      "BasePath": "_content/GestaoMusical_Web",
+      "RelativePath": "images/3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\3.jpg"
     },
     {
       "Identity": "D:\\WebGestaoMusical\\GestaoMusical_Web\\GestaoMusical_Web\\wwwroot\\images\\bg.jpg",

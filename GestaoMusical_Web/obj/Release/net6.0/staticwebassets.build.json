@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YxiOI6b9ErrmNXQCOW2k+kzOsIJYjh7Fri0pkxovQDc=",
+  "Hash": "LitnZbkW1ERlBfu7HbPiGxMYRgBqLYwFTLE4qvb0PpI=",
   "Source": "GestaoMusical_Web",
   "BasePath": "_content/GestaoMusical_Web",
   "Mode": "Default",
@@ -289,6 +289,23 @@
       "OriginalItemSpec": "wwwroot\\images\\2.jpg"
     },
     {
+      "Identity": "D:\\WebGestaoMusical\\GestaoMusical_Web\\GestaoMusical_Web\\wwwroot\\images\\3.jpg",
+      "SourceId": "GestaoMusical_Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebGestaoMusical\\GestaoMusical_Web\\GestaoMusical_Web\\wwwroot\\",
+      "BasePath": "_content/GestaoMusical_Web",
+      "RelativePath": "images/3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\3.jpg"
+    },
+    {
       "Identity": "D:\\WebGestaoMusical\\GestaoMusical_Web\\GestaoMusical_Web\\wwwroot\\images\\bg.jpg",
       "SourceId": "GestaoMusical_Web",
       "SourceType": "Discovered",
@@ -304,23 +321,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\bg.jpg"
-    },
-    {
-      "Identity": "D:\\WebGestaoMusical\\GestaoMusical_Web\\GestaoMusical_Web\\wwwroot\\images\\bg2.jpg",
-      "SourceId": "GestaoMusical_Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\WebGestaoMusical\\GestaoMusical_Web\\GestaoMusical_Web\\wwwroot\\",
-      "BasePath": "_content/GestaoMusical_Web",
-      "RelativePath": "images/bg2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bg2.jpg"
     },
     {
       "Identity": "D:\\WebGestaoMusical\\GestaoMusical_Web\\GestaoMusical_Web\\wwwroot\\images\\piano_icon.ico",

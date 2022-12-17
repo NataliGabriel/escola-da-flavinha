@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using System.Data;
 using Npgsql;
 
-    namespace GestaoMusical_Web.Models
-    {
+namespace GestaoMusical_Web.Models
+{
     public class Banco
-    { 
+    {
         private NpgsqlConnection ConexaoBanco = new NpgsqlConnection();
         /// <summary>
         /// Procedure interna de abertura de conexao com banco de dados
@@ -23,10 +23,10 @@ using Npgsql;
                 //    + ";User Id=postgres;Password=postgres;");
                 //    ConexaoBanco.Open();
 
-                ConexaoBanco = new NpgsqlConnection("Server=52.73.155.171"
-                + ";Port=5432;Database=du09dbs93d50e"
-                + ";User Id=qrayepwxuyemqv; Password=5e4e372c098fda0e8fdac14e57eaee218f53c8e8aa117b25634d65d12320d41f;");
-            ConexaoBanco.Open();
+                ConexaoBanco = new NpgsqlConnection("Server=ec2-3-225-213-67.compute-1.amazonaws.com"
+                + ";Port=5432;Database=d22q1gvfar1eqc"
+                + ";User Id=kjyqeakruqmvez; Password=d474494760bbecf49aacde6fa9b9fc34fb279d66dfc5ed62570bedf85456eb25;");
+                ConexaoBanco.Open();
             }
             catch
             { }
