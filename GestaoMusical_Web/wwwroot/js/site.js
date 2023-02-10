@@ -1,4 +1,10 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿const toggleButton = document.getElementById("escondeMostra");
+const text = document.getElementById("senha");
 
-// Write your JavaScript code.
+toggleButton.addEventListener("click", function () {
+    if (text.type === "password") {
+        text.type = "text";
+    } else {
+        text.type = "password";
+    }
+});
