@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WebGestaoMusical\\GestaoMusical_Web\\GestaoMusical_Web\\GestaoMusical_Web.csproj": {}
+    "D:\\VisualProjetos\\GestaoMusical\\escola-da-flavinha\\GestaoMusical_Web\\GestaoMusical_Web.csproj": {}
   },
   "projects": {
-    "D:\\WebGestaoMusical\\GestaoMusical_Web\\GestaoMusical_Web\\GestaoMusical_Web.csproj": {
+    "D:\\VisualProjetos\\GestaoMusical\\escola-da-flavinha\\GestaoMusical_Web\\GestaoMusical_Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WebGestaoMusical\\GestaoMusical_Web\\GestaoMusical_Web\\GestaoMusical_Web.csproj",
+        "projectUniqueName": "D:\\VisualProjetos\\GestaoMusical\\escola-da-flavinha\\GestaoMusical_Web\\GestaoMusical_Web.csproj",
         "projectName": "GestaoMusical_Web",
-        "projectPath": "D:\\WebGestaoMusical\\GestaoMusical_Web\\GestaoMusical_Web\\GestaoMusical_Web.csproj",
-        "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
-        "outputPath": "D:\\WebGestaoMusical\\GestaoMusical_Web\\GestaoMusical_Web\\obj\\",
+        "projectPath": "D:\\VisualProjetos\\GestaoMusical\\escola-da-flavinha\\GestaoMusical_Web\\GestaoMusical_Web.csproj",
+        "packagesPath": "C:\\Users\\Spart\\.nuget\\packages\\",
+        "outputPath": "D:\\VisualProjetos\\GestaoMusical\\escola-da-flavinha\\GestaoMusical_Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Spart\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -71,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
