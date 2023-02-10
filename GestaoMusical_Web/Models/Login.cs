@@ -47,10 +47,12 @@ namespace GestaoMusical_Web.Models
                 {
                     if (Registros.Rows[Registro]["data_anotacao"].ToString() != "")
                     {
+                        string[] data_anotacao = Registros.Rows[Registro]["data_anotacao"].ToString().Replace(" 00:00:00", "").Split('/');
+                        string data_formatada = data_anotacao[1] + "/" + data_anotacao[0] + "/" + data_anotacao[2];
                         leituras.Add(new Login
                         {
                             id_anotacao = Convert.ToInt32(Registros.Rows[Registro]["id_anotacao"]),
-                            data_anotacao = Registros.Rows[Registro]["data_anotacao"].ToString().Replace(" 00:00:00", "")
+                            data_anotacao = data_formatada
                         }
                         );
                     }
