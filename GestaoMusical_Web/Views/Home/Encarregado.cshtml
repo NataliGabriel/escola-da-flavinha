@@ -19,7 +19,7 @@
             crossorigin="anonymous"></script>
 
 </head>
-<body class="img js-fullheight modal-dialog-scrollable" style="background-image: url(../images/bg.jpg); no-repeat center center fixed; overflow: hidden; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover;">
+<body class="img js-fullheight" style="background-image: url(../images/bg.jpg); no-repeat center center fixed; overflow: hidden; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover;">
     <header>
         <div style="float: left; margin-top: 10px">
             <a href="Index" class="fa fa-arrow-left" aria-hidden="true"></a>
@@ -30,7 +30,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center mb-5" style="padding-bottom: 0 !important; margin-bottom:0 !important ">
-                    <div style="font-size: 4rem; margin-top: -70px; margin-left: -10px">
+                    <div style="font-size: 4rem; margin-top:-100px;   margin-left: -10px">
                         <h2 class="heading-section" style="font: bold" id="nome">Olá @ViewData["Nome"]!</h2>
                     </div>
 
@@ -49,37 +49,42 @@
                     </form>
 
                 </div>
-                <form asp-controller="Home" asp-action="AdicionaAnotacao" method="post">
-                    <div class="row">
+                <div class="row">
+                    <form asp-controller="Home" asp-action="AdicionaAnotacao" method="post">
+
                         <div style=" padding-top: 5px; text-align: center">
                             <textarea readonly="readonly" id="anotacao" name="anotacao" style="margin: auto; justify-content: center ;font:800; max-height: 65vh !important ; min-height: 65vh ;color: white; background-color: transparent; font-family: 'Dosis', sans-serif;"
                                       rows="13" cols="35" align="center">@ViewData["Anotacao"]</textarea>
                         </div>
-
-                        <div style="padding-left: 490px;">
-                            <input id="btnSalva" type="submit" style="display:none; " value="Salvar Anotação" class="btn btn-primary" />
+                        <div class="row">
+                            <div class="col-md-6 text-center mb-5" style="padding-left: 150px">
+                                <input id="btnSalva" type="submit" style="display:none; text-align: center; margin: auto" value="Salvar Anotação" class="btn btn-primary" />
+                            </div>
                         </div>
-                </form>
-                @if (ViewBag.Sucesso != null && ViewBag.Sucesso)
-                {
-                    <div id="mensagem" class="alert alert-success" role="alert">
-                        <p><strong>Sucesso!</strong> Sua ação foi realizada com êxito.</p>
-                    </div>
-                }
-                @if (ViewBag.Sucesso != null && !ViewBag.Sucesso)
-                {
-                    <div id="mensagem" class="alert alert-warning" role="alert">
-                        <p><strong>Erro!</strong> Sua ação não foi realizada com êxito.</p>
-                    </div>
-                }
+                    </form>
+                    <br>
+                    <br>
+                    @if (ViewBag.Sucesso != null && ViewBag.Sucesso)
+                    {
+                        <div id="mensagem" class="alert alert-success" role="alert">
+                            <p><strong>Sucesso!</strong> Sua ação foi realizada com êxito.</p>
+                        </div>
+                    }
+                    @if (ViewBag.Sucesso != null && !ViewBag.Sucesso)
+                    {
+                        <div id="mensagem" class="alert alert-warning" role="alert">
+                            <p><strong>Erro!</strong> Sua ação não foi realizada com êxito.</p>
+                        </div>
+                    }
+                </div>
+                <br>
+                <br>
             </div>
-
-        </div>
-        <footer class="border-top footer text-muted fixed-bottom">
-            <div class="container">
-                &copy; 2022 - Escola da Flavinha.
-            </div>
-        </footer>
+            <footer class="border-top footer text-muted fixed-bottom">
+                <div class="container">
+                    &copy; 2022 - Escola da Flavinha.
+                </div>
+            </footer>
     </section>
 
     <script src="~/js/jquery.min.js"></script>
