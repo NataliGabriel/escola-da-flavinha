@@ -47,7 +47,6 @@ namespace GestaoMusical_Web.Controllers
 
                 var ID = RespostaSQL.Rows[0].Field<Int64>("id_alunas").ToString();
                 ListaNomeAluna(Convert.ToInt32(ID));
-                ListaDataAnotacao(Convert.ToInt32(ID));
                 _name = "Irmão André";
                 ViewData["Nome"] = _name;
                 return View("Encarregado");
@@ -116,7 +115,7 @@ namespace GestaoMusical_Web.Controllers
                                 "sc_alunas.tb_anotacao(anotacao, id_alunas, data_anotacao) " +
                                 "VALUES(" +
                                 "'" + anotacao + "', " +
-                                " " + id + ", '" + dataFormatada + "');";
+                                " " + id + ", '" + dataCurta + "');";
 
                 int respostaSql = banco.InsereDados(insertSQL);
                 if (respostaSql != 0)
