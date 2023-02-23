@@ -8,3 +8,5 @@ toggleButton.addEventListener("click", function () {
         text.type = "password";
     }
 });
+
+

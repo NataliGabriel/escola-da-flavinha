@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "t7hI5TeNJEh01KtK4JV2kpHIBwUsZgyGn5/DTkeNCjc=",
+  "Hash": "zLw44EROLDFm7inZFmFuyrkRGqIOEPtBZNOF2O/R+RU=",
   "Source": "GestaoMusical_Web",
   "BasePath": "_content/GestaoMusical_Web",
   "Mode": "Default",
@@ -355,6 +355,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\quit.png"
+    },
+    {
+      "Identity": "D:\\VisualProjetos\\GestaoMusical\\escola-da-flavinha\\GestaoMusical_Web\\wwwroot\\js\\areaProf.js",
+      "SourceId": "GestaoMusical_Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\VisualProjetos\\GestaoMusical\\escola-da-flavinha\\GestaoMusical_Web\\wwwroot\\",
+      "BasePath": "_content/GestaoMusical_Web",
+      "RelativePath": "js/areaProf.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\areaProf.js"
     },
     {
       "Identity": "D:\\VisualProjetos\\GestaoMusical\\escola-da-flavinha\\GestaoMusical_Web\\wwwroot\\js\\bootstrap.min.js",

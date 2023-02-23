@@ -48,11 +48,11 @@ namespace GestaoMusical_Web.Controllers
                 var ID = RespostaSQL.Rows[0].Field<Int64>("id_alunas").ToString();
                 ListaNomeAluna(Convert.ToInt32(ID));
                 ListaDataAnotacao(Convert.ToInt32(ID));
-
-                ViewData["Nome"] = "Irmão André";
+                _name = "Irmão André";
+                ViewData["Nome"] = _name;
                 return View("Encarregado");
             }
-            else if ( usuario == "Flavia" && senha == "melhorinstrutora")
+            else if (usuario == "Flavia" && senha == "melhorinstrutora")
             {
 
                 Banco banco = new Banco();
@@ -63,8 +63,8 @@ namespace GestaoMusical_Web.Controllers
 
                 var ID = RespostaSQL.Rows[0].Field<Int64>("id_alunas").ToString();
                 ListaNomeAluna(Convert.ToInt32(ID));
-
-                ViewData["Nome"] = "Flávia";
+                _name = "Flávia";
+                ViewData["Nome"] = _name;
                 return View("Encarregado");
 
             }
@@ -99,16 +99,52 @@ namespace GestaoMusical_Web.Controllers
                 else { ModelState.AddModelError("", "Login Inválido."); return View("Index"); }
             }
         }
+        [HttpPost]
+        public IActionResult AdicionaAnotacao(string anotacao)
+        {
+            try
+            {
 
+                Banco banco = new Banco();
+                string id = Convert.ToString(_id);
+                DateTime data = DateTime.Now;
+                string dataCurta = data.ToShortDateString();
+                string[] dataArray = dataCurta.Split('/');
+                string dataFormatada = dataArray[1] + "/" + dataArray[0] + "/" + dataArray[2];
+                string insertSQL = "INSERT INTO " +
+                                "sc_alunas.tb_anotacao(anotacao, id_alunas, data_anotacao) " +
+                                "VALUES(" +
+                                "'" + anotacao + "', " +
+                                " " + id + ", '" + dataFormatada + "');";
+
+                int respostaSql = banco.InsereDados(insertSQL);
+                if (respostaSql != 0)
+                {
+                    ViewBag.Sucesso = true;
+                }
+                else
+                {
+                    ViewBag.Sucesso = false;
+                }
+
+                ListaNomeAluna(Convert.ToInt32(id));
+                ViewData["Nome"] = _name;
+                return View("Encarregado");
+            }
+            catch (Exception ex)
+            {
+                return View(ex.Message);
+            }
+        }
         [HttpPost]
         public IActionResult FiltroNome(string aluna)
         {
             Banco banco = new Banco();
 
             ListaNomeAluna(Convert.ToInt32(aluna));
-            ViewData["Nome"] = "Irmão André";
+            ViewData["Nome"] = _name;
 
-
+            _id = Convert.ToInt32(aluna);
             var scriptSQL = "SELECT * FROM sc_alunas.tb_anotacao WHERE id_alunas =" + aluna + "ORDER BY id_anotacao DESC limit 1";
             DataTable RespostaSQL = banco.SelecionaDados(scriptSQL);
             if (RespostaSQL.Rows.Count > 0)
