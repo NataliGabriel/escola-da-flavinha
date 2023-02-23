@@ -104,13 +104,14 @@ namespace GestaoMusical_Web.Controllers
         {
             try
             {
-
+                #region Variáveis
                 Banco banco = new Banco();
                 string id = Convert.ToString(_id);
                 DateTime data = DateTime.Now;
                 string dataCurta = data.ToShortDateString();
                 string[] dataArray = dataCurta.Split('/');
                 string dataFormatada = dataArray[1] + "/" + dataArray[0] + "/" + dataArray[2];
+                #endregion
                 string insertSQL = "INSERT INTO " +
                                 "sc_alunas.tb_anotacao(anotacao, id_alunas, data_anotacao) " +
                                 "VALUES(" +
