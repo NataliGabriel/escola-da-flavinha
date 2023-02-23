@@ -29,14 +29,14 @@
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
-                @*@if (ViewBag.Sucesso != null && ViewBag.Sucesso)
-                {*@
+                @if (ViewBag.Sucesso != null && ViewBag.Sucesso)
+                {
                     <div id="mensagem" class="alert alert-success" role="alert">
                         <p style="margin-bottom:auto"><strong>Sucesso!</strong> Sua ação foi realizada com êxito.</p>
                     </div>
                     <br />
                     <br />
-                @*}*@
+                }
                 @if (ViewBag.Sucesso != null && !ViewBag.Sucesso)
                 {
                     <div id="mensagem" class="alert alert-warning" role="alert">
