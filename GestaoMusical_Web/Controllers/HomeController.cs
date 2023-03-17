@@ -115,7 +115,7 @@ namespace GestaoMusical_Web.Controllers
                                 "sc_alunas.tb_anotacao(anotacao, id_alunas, data_anotacao) " +
                                 "VALUES(" +
                                 "'" + anotacao + "', " +
-                                " " + id + ", '" + dataCurta + "');";
+                                " " + id + ", '" + dataFormatada + "');";
 
                 int respostaSql = banco.InsereDados(insertSQL);
                 if (respostaSql != 0)
