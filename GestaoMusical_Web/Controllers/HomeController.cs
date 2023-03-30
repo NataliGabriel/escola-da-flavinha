@@ -110,13 +110,17 @@ namespace GestaoMusical_Web.Controllers
                 string dataCurta = data.ToShortDateString();
                 string dataFormatada = data.ToString("MM/dd/YYYY");
                 #endregion
+                //string SelectSQL = $"SELECT * FROM sc_alunas.tb_alunas WHERE id_alunas = '{id}' ";
+                //var resposta = banco.SelecionaDados(SelectSQL);
+
                 string insertSQL = "INSERT INTO " +
-                                "sc_alunas.tb_anotacao(anotacao, id_alunas, data_anotacao) " +
-                                "VALUES(" +
-                                "'" + anotacao + "', " +
-                                " " + id + ", '" + dataCurta + "');";
+                "sc_alunas.tb_anotacao(anotacao, id_alunas, data_anotacao) " +
+                "VALUES(" +
+                "'" + anotacao + "', " +
+                " " + id + ", '" + dataFormatada + "');";
 
                 int respostaSql = banco.InsereDados(insertSQL);
+
                 if (respostaSql != 0)
                 {
                     ViewBag.Sucesso = true;
@@ -158,15 +162,15 @@ namespace GestaoMusical_Web.Controllers
         public IActionResult FiltraData(int dataid)
         {
             Banco banco = new Banco();
-            ListaDataAnotacao(_id);
             ViewData["Nome"] = _name;
-            var scriptSQL = "SELECT * FROM sc_alunas.tb_anotacao WHERE id_anotacao =" + dataid + " ORDER BY id_anotacao DESC limit 1";
+            var scriptSQL = "SELECT * FROM sc_alunas.tb_anotacao WHERE id_anotacao =" + dataid + " AND id_alunas = "+_id+" ORDER BY id_anotacao DESC limit 1";
             DataTable RespostaSQL = banco.SelecionaDados(scriptSQL);
             if (RespostaSQL.Rows.Count > 0)
             {
                 var anotacoes = RespostaSQL.Rows[0].Field<String>("anotacao");
                 ViewData["Anotacao"] = anotacoes;
             }
+            ListaDataAnotacao(_id);
             return View("Anotacao");
         }
         private void ListaNomeAluna(int alunaID)
@@ -198,7 +202,7 @@ namespace GestaoMusical_Web.Controllers
             Login dt = new Login();
             Banco banco = new Banco();
             List<Login> ListagemAlunas = dt.ListaDatas(alunaID);
-            string sql = "SELECT DISTINCT on (data_anotacao) data_anotacao FROM sc_alunas.tb_anotacao WHERE id_alunas =" + alunaID + "ORDER BY data_anotacao ASC limit 1";
+            string sql = "SELECT DISTINCT on (data_anotacao) data_anotacao FROM sc_alunas.tb_anotacao WHERE id_alunas =" + alunaID + "ORDER BY data_anotacao DESC limit 1";
             DataTable data = banco.SelecionaDados(sql);
             if (ListagemAlunas.Count != 0)
             {
