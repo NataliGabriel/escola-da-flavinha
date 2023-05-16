@@ -23,9 +23,9 @@ namespace GestaoMusical_Web.Models
                 //    + ";User Id=postgres;Password=postgres;");
                 //    ConexaoBanco.Open();
 
-                ConexaoBanco = new NpgsqlConnection("Server=ec2-3-225-213-67.compute-1.amazonaws.com"
-                + ";Port=5432;Database=d22q1gvfar1eqc"
-                + ";User Id=kjyqeakruqmvez; Password=d474494760bbecf49aacde6fa9b9fc34fb279d66dfc5ed62570bedf85456eb25;");
+                ConexaoBanco = new NpgsqlConnection("Server=ec2-3-214-103-146.compute-1.amazonaws.com"
+                + ";Port=5432;Database=d8at45oq8919il"
+                + ";User Id=cxasfofusnjzcn; Password=6efd7954ca89b53750773d2e213247dfd72c4076ff0f88083ce6709539ab15dd;");
                 ConexaoBanco.Open();
             }
             catch
