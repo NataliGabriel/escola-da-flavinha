@@ -202,7 +202,7 @@ namespace GestaoMusical_Web.Controllers
             Login dt = new Login();
             Banco banco = new Banco();
             List<Login> ListagemAlunas = dt.ListaDatas(alunaID);
-            string sql = "SELECT DISTINCT on (data_anotacao) data_anotacao FROM sc_alunas.tb_anotacao WHERE id_alunas =" + alunaID + "ORDER BY data_anotacao DESC limit 1";
+            string sql = "SELECT DISTINCT on (data_anotacao) data_anotacao FROM sc_alunas.tb_anotacao WHERE id_alunas =" + alunaID + " ORDER BY data_anotacao DESC limit 1";
             DataTable data = banco.SelecionaDados(sql);
             if (ListagemAlunas.Count != 0)
             {
