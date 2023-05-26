@@ -10,9 +10,6 @@ using RestSharp;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-/// <summary>
-/// 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
-/// </summary>
 namespace GestaoMusical_Web.Controllers
 {
     public class HomeController : Controller
@@ -20,7 +17,6 @@ namespace GestaoMusical_Web.Controllers
         private readonly ILogger<HomeController> _logger;
         public static int _id = 0;
         public static string _name = null;
-        private const string ChatGptApiKey = "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";
         private const string ChatGptBaseUrl = "https://api.openai.com/v1/completions";
 
 
@@ -234,9 +230,10 @@ namespace GestaoMusical_Web.Controllers
         [HttpPost]
         public ActionResult GetChatGptResponse(string message)
         {
+            TokenAPI API = new TokenAPI();
             var client = new RestClient(ChatGptBaseUrl);
             var request = new RestRequest(ChatGptBaseUrl, Method.Post);
-            request.AddHeader("Authorization", $"Bearer {ChatGptApiKey}");
+            request.AddHeader("Authorization", $"Bearer {API.token}");
             request.AddHeader("Content-Type", "application/json");
             request.AddParameter("application/json", JsonConvert.SerializeObject(new { model = "text-davinci-003", prompt = message + " (escreva com no máximo 100 caracteres)", max_tokens = 100 }), ParameterType.RequestBody);
 

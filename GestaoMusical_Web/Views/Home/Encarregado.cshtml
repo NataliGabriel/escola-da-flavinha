@@ -15,6 +15,8 @@
 
     <link rel="stylesheet" href="../css/style.css">
 
+    <link rel="stylesheet" href="~/css/Chat.css">
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7374116760887011"
             crossorigin="anonymous"></script>
 
@@ -84,6 +86,24 @@
                 <br>
                 <br>
             </div>
+
+            <div id="chat-container">
+                <div id="chat-header">
+                    Professora Flávia
+                    <button id="chat-toggle-btn">
+                        <i id="chat-minimize" class="fa fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div id="chat-body">
+                    <p>Bem-vindo! Como posso ajudar?</p>
+                </div>
+                <div id="chat-input">
+                    <input type="text" id="message" name="message" />
+                    <button id="send-button">Enviar</button>
+                </div>
+            </div>
+
+
             <footer class="footer navbar-fixed-bottom">
                 <div class="container">
                     &copy; 2022 - Escola da Flavinha.
@@ -96,6 +116,23 @@
     <script src="~/js/bootstrap.min.js"></script>
     <script src="~/js/main.js"></script>
     <script src="~/js/areaProf.js"></script>
+    <script src="/js/ChatGptAssistent.js"></script>
+
+    <script>
+            document.getElementById("chat-toggle-btn").addEventListener("click", function() {
+            var chatContainer = document.getElementById("chat-container");
+            var chatToggleButton = document.getElementById("chat-toggle-btn");
+            var chatMinimize = document.getElementById("chat-minimize");
+            chatContainer.classList.toggle("chat-hidden");
+
+            if (chatContainer.classList.contains("chat-hidden")) {
+                chatMinimize.className = "fa fa-chevron-up";
+            } else {
+                chatMinimize.className = "fa fa-chevron-down";
+            }
+        });
+
+    </script>
     <script>
 
         function MedidorSelecionado() {
