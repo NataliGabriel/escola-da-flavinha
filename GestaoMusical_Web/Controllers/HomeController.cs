@@ -230,10 +230,12 @@ namespace GestaoMusical_Web.Controllers
         [HttpPost]
         public ActionResult GetChatGptResponse(string message)
         {
+
             TokenAPI API = new TokenAPI();
             var client = new RestClient(ChatGptBaseUrl);
             var request = new RestRequest(ChatGptBaseUrl, Method.Post);
-            request.AddHeader("Authorization", $"Bearer {API.token}");
+            var token = API.GetToken();
+            request.AddHeader("Authorization", $"Bearer {token}");
             request.AddHeader("Content-Type", "application/json");
             request.AddParameter("application/json", JsonConvert.SerializeObject(new { model = "text-davinci-003", prompt = message + " (escreva com no máximo 100 caracteres)", max_tokens = 100 }), ParameterType.RequestBody);
 

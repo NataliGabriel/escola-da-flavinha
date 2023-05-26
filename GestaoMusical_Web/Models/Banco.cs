@@ -104,10 +104,23 @@ namespace GestaoMusical_Web.Models
             return Selecao;
         }
 
+
+        public int CriaTabela(string SQL, bool Scalar = false)
+        {
+            int iRetorno = 0;
+            try
+            {
+                AbreBanco();
+                NpgsqlCommand Comando = new NpgsqlCommand(SQL, ConexaoBanco);
+                iRetorno = Scalar == false ? Comando.ExecuteNonQuery() : Convert.ToInt32(Comando.ExecuteScalar());
+            }
+            catch (Exception ex) { }
+            FechaBanco();
+            return iRetorno;
+        }
         /// <summary>
         /// Função geral de Inserção de Dados
         /// </summary>
-
         public int InsereDados(string SQL, string NomeBanco = null, bool Scalar = false)
         {
             int iRetorno = 0;
