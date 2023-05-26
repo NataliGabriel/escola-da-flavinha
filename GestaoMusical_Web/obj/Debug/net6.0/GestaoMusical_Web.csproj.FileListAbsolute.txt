@@ -474,3 +474,8 @@ D:\VisualProjetos\GestaoMusical\escola-da-flavinha\GestaoMusical_Web\obj\Debug\n
 D:\VisualProjetos\GestaoMusical\escola-da-flavinha\GestaoMusical_Web\obj\Debug\net6.0\GestaoMusical_Web.pdb
 D:\VisualProjetos\GestaoMusical\escola-da-flavinha\GestaoMusical_Web\obj\Debug\net6.0\GestaoMusical_Web.genruntimeconfig.cache
 D:\VisualProjetos\GestaoMusical\escola-da-flavinha\GestaoMusical_Web\obj\Debug\net6.0\ref\GestaoMusical_Web.dll
+D:\VisualProjetos\GestaoMusical\escola-da-flavinha\GestaoMusical_Web\bin\Debug\net6.0\OpenAI_API.dll
+D:\VisualProjetos\GestaoMusical\escola-da-flavinha\GestaoMusical_Web\bin\Debug\net6.0\RestSharp.dll
+D:\VisualProjetos\GestaoMusical\escola-da-flavinha\GestaoMusical_Web\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\VisualProjetos\GestaoMusical\escola-da-flavinha\GestaoMusical_Web\bin\Debug\net6.0\System.Text.Json.dll
+D:\VisualProjetos\GestaoMusical\escola-da-flavinha\GestaoMusical_Web\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll

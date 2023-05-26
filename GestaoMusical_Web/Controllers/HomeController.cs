@@ -5,7 +5,14 @@ using System.Data;
 using System.Security.Claims;
 using GestaoMusical_Web.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using OpenAI_API;
+using RestSharp;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
+/// <summary>
+/// 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
+/// </summary>
 namespace GestaoMusical_Web.Controllers
 {
     public class HomeController : Controller
@@ -13,6 +20,10 @@ namespace GestaoMusical_Web.Controllers
         private readonly ILogger<HomeController> _logger;
         public static int _id = 0;
         public static string _name = null;
+        private const string ChatGptApiKey = "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";
+        private const string ChatGptBaseUrl = "https://api.openai.com/v1/completions";
+
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -195,7 +206,6 @@ namespace GestaoMusical_Web.Controllers
             ViewBag.Lista = ListagemAluna;
 
         }
-
         private void ListaDataAnotacao(int alunaID)
         {
             List<SelectListItem> ListagemAluna = new List<SelectListItem>();
@@ -221,5 +231,22 @@ namespace GestaoMusical_Web.Controllers
             ViewBag.Lista = ListagemAluna;
 
         }
+        [HttpPost]
+        public ActionResult GetChatGptResponse(string message)
+        {
+            var client = new RestClient(ChatGptBaseUrl);
+            var request = new RestRequest(ChatGptBaseUrl, Method.Post);
+            request.AddHeader("Authorization", $"Bearer {ChatGptApiKey}");
+            request.AddHeader("Content-Type", "application/json");
+            request.AddParameter("application/json", JsonConvert.SerializeObject(new { model = "text-davinci-003", prompt = message + " (escreva com no máximo 100 caracteres)", max_tokens = 100 }), ParameterType.RequestBody);
+
+            RestResponse response = client.Execute(request);
+            var content = JObject.Parse(response.Content);
+            var choices = content["choices"];
+            var chatGptResponse = choices.First?["text"]?.ToString();
+
+            return Json(new { message = chatGptResponse });
+        }
+
     }
 }

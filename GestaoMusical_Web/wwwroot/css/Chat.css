@@ -1,0 +1,87 @@
+﻿
+
+#chat-container {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    width: 320px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#chat-header {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-bottom: 5px solid #ccc;
+    text-align: center;
+}
+
+    #chat-header span {
+        font-weight: bold;
+    }
+
+#chat-toggle-btn {
+    float: right;
+    padding-right: 5px;
+    background-color: #777676;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#chat-body {
+    height: 300px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+#chat-messages {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-message {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.assistant-message {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#chat-footer {
+    padding: 15px;
+    border-top: 1px solid #ccc;
+}
+
+#chat-input {
+    width: 100%;
+    padding: 5px;
+}
+
+#chat-send-btn {
+    padding: 5px 10px;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+#chat-container.chat-hidden {
+    height: 50px;
+}
+
+
+#chat-toggle-btn.chat-hidden {
+    background-color: #337ab7;
+    color: #fff;
+}

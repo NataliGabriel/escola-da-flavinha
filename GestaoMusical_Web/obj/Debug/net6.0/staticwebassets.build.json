@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zLw44EROLDFm7inZFmFuyrkRGqIOEPtBZNOF2O/R+RU=",
+  "Hash": "zwL/gXyjve9XZ4UaMb1TfrxhhQewk/4WkTjGc2mQTUo=",
   "Source": "GestaoMusical_Web",
   "BasePath": "_content/GestaoMusical_Web",
   "Mode": "Default",
@@ -221,6 +221,23 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\utilities\\_stretched-link.css"
     },
     {
+      "Identity": "D:\\VisualProjetos\\GestaoMusical\\escola-da-flavinha\\GestaoMusical_Web\\wwwroot\\css\\Chat.css",
+      "SourceId": "GestaoMusical_Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\VisualProjetos\\GestaoMusical\\escola-da-flavinha\\GestaoMusical_Web\\wwwroot\\",
+      "BasePath": "_content/GestaoMusical_Web",
+      "RelativePath": "css/Chat.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Chat.css"
+    },
+    {
       "Identity": "D:\\VisualProjetos\\GestaoMusical\\escola-da-flavinha\\GestaoMusical_Web\\wwwroot\\css\\style.css",
       "SourceId": "GestaoMusical_Web",
       "SourceType": "Discovered",
@@ -389,6 +406,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
+    },
+    {
+      "Identity": "D:\\VisualProjetos\\GestaoMusical\\escola-da-flavinha\\GestaoMusical_Web\\wwwroot\\js\\ChatGptAssistent.js",
+      "SourceId": "GestaoMusical_Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\VisualProjetos\\GestaoMusical\\escola-da-flavinha\\GestaoMusical_Web\\wwwroot\\",
+      "BasePath": "_content/GestaoMusical_Web",
+      "RelativePath": "js/ChatGptAssistent.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\ChatGptAssistent.js"
     },
     {
       "Identity": "D:\\VisualProjetos\\GestaoMusical\\escola-da-flavinha\\GestaoMusical_Web\\wwwroot\\js\\jquery.min.js",

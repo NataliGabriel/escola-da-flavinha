@@ -1,5 +1,4 @@
-﻿@model IEnumerable<GestaoMusical_Web.Models.Login>
-@{
+﻿@{
     ViewData["Title"] = "Anotações";
 }
 <!doctype html>
@@ -11,9 +10,11 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
     <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="~/css/Chat.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7374116760887011"
             crossorigin="anonymous"></script>
 
@@ -31,7 +32,6 @@
                     <div style="font-size: 4rem; margin-top: -70px; margin-left: -10px">
                         <h2 class="heading-section" style="font: bold">Olá @ViewData["Nome"]! </h2>
                     </div>
-
                     <form asp-controller="Home" asp-action="FiltraData" method="post">
                         <div class="row">
                             <div class="col-md-9 col-sm-9">
@@ -57,6 +57,23 @@
             </div>
         </div>
 
+        <div id="chat-container">
+            <div id="chat-header">
+                Professora Flávia
+                <button id="chat-toggle-btn">
+                    <i id="chat-minimize" class="fa fa-chevron-down"></i>
+                </button>
+            </div>
+            <div id="chat-body">
+                <p>Bem-vindo! Como posso ajudar?</p>
+            </div>
+            <div id="chat-input">
+                <input type="text" id="message" name="message" />
+                <button id="send-button">Enviar</button>
+            </div>
+        </div>
+
+
         <footer class="border-top footer text-muted fixed-bottom">
             <div class="container">
                 &copy; 2022 - Escola da Flavinha.
@@ -64,12 +81,27 @@
         </footer>
     </section>
 
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/popper.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/ChatGptAssistent.js"></script>
 
+    <script>
+            document.getElementById("chat-toggle-btn").addEventListener("click", function() {
+            var chatContainer = document.getElementById("chat-container");
+            var chatToggleButton = document.getElementById("chat-toggle-btn");
+            var chatMinimize = document.getElementById("chat-minimize");
+            chatContainer.classList.toggle("chat-hidden");
+
+            if (chatContainer.classList.contains("chat-hidden")) {
+                chatMinimize.className = "fa fa-chevron-up";
+            } else {
+                chatMinimize.className = "fa fa-chevron-down";
+            }
+        });
+
+    </script>
 
 </body>
 </html>
-
