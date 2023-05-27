@@ -21,7 +21,7 @@
             crossorigin="anonymous"></script>
 
 </head>
-<body class="img js-fullheight modal-dialog-scrollable" style="background-image: url(../images/bg.jpg); no-repeat center center fixed; overflow: hidden; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover;">
+<body class="img js-fullheight modal-dialog-scrollable" style="background-image: url(../images/bg.jpg); background-attachment: fixed;   background-position: center;   background-repeat: no-repeat   background-size: cover;">
     <header>
         <div style="float: left; margin-top: 10px">
             <a href="Index" class="fa fa-arrow-left" aria-hidden="true"></a>
@@ -89,7 +89,7 @@
                             <div id="metronome-controls">
                                 <div>
                                     <h7 style="font: bold; color: white; padding-left: 5px">Metrônomo | </h7>
-                                    <label style="color: white" for="bpm">BPM:</label>
+                                    <label  for="bpm">BPM:</label>
                                     <input type="number" id="bpm" name="bpm" min="1" max="500" step="1" value="120" />
                                     <button id="start-button"><i class="fa fa-play"></i></button>
                                     <button id="pause-button"><i class="fa fa-pause"></i></button>
