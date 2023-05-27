@@ -1,5 +1,6 @@
 ﻿
 
+
 #chat-container {
     position: fixed;
     bottom: 30px;
@@ -16,7 +17,7 @@
 }
 
 #chat-header {
-    padding: 10px;
+    padding: 5px;
     background-color: #f1f1f1;
     border-bottom: 5px solid #ccc;
     text-align: center;
@@ -76,12 +77,41 @@
     cursor: pointer;
     float: right;
 }
+
 #chat-container.chat-hidden {
-    height: 50px;
+    height: 40px;
+    width: 40px;
 }
 
-
+/*
 #chat-toggle-btn.chat-hidden {
     background-color: #337ab7;
     color: #fff;
 }
+*/
+
+#metronome-container {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#metronome-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+    #metronome-controls label {
+        font-weight: bold;
+    }
+/*
+#start-button, #pause-button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+*/

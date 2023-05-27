@@ -9,6 +9,7 @@ using OpenAI_API;
 using RestSharp;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Text.RegularExpressions;
 
 namespace GestaoMusical_Web.Controllers
 {
@@ -250,21 +251,21 @@ namespace GestaoMusical_Web.Controllers
 
         public string GetMetodo(string anotacoes)
         {
-            string metodoCCB = "Método CCB";
-            int startIndex = anotacoes.IndexOf(metodoCCB, StringComparison.OrdinalIgnoreCase);
-
-            if (startIndex != -1)
+            string metodos = "";
+            for (int i = 1; i < 5; i++)
             {
-                int endIndex = anotacoes.IndexOf("\n", startIndex);
-                if (endIndex != -1)
+                string pattern = @$"-Método CCB {i}: (.*?)\n";
+
+                Match match = Regex.Match(anotacoes, pattern, RegexOptions.Singleline);
+
+                if (match.Success)
                 {
-                    return anotacoes.Substring(startIndex, endIndex - startIndex).Trim();
+                    metodos += "Método"+ i + " " + match.Groups[1].Value.Trim();
                 }
+                
+
             }
-
-            return string.Empty;
-
-            return "";
+            return metodos;
         }
 
     }

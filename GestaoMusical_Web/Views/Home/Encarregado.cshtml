@@ -74,22 +74,37 @@
                             <textarea readonly="readonly" id="anotacao" name="anotacao" style="margin: auto; justify-content: center ;font:800; max-height: 65vh !important ; min-height: 65vh ;color: white; background-color: transparent; font-family: 'Dosis', sans-serif;"
                                       rows="13" cols="35" align="center">@ViewData["Anotacao"]</textarea>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 text-center mb-5" style="padding-left: 90px">
-                                <input id="btnSalva" type="submit" style="display:none; text-align: center; margin: auto" value="Salvar Anotação" class="btn btn-primary" />
+                        <div class="col-md-6 text-center mb-5" style="padding-bottom: 0 !important; margin-bottom:0 !important ">
+
+                            <div class="row">
+                                <div class="col-md-3 col-sm-3">
+                                    <input type="submit" style="margin-bottom: 10px" value="Salvar" class="btn btn-primary" />
+                                </div>
                             </div>
                         </div>
                     </form>
+                    <div style="padding-bottom: 15px " class="col-md-6 text-center mb-5">
+                        @*<h2 class="heading-section" style="font: bold">Metrônomo</h2>*@
+                        <div id="metronome-container">
+                            <div id="metronome-controls">
+                                <div>
+                                    <h7 style="font: bold; color: white; padding-left: 5px">Metrônomo | </h7>
+                                    <label style="color: white" for="bpm">BPM:</label>
+                                    <input type="number" id="bpm" name="bpm" min="1" max="500" step="1" value="120" />
+                                    <button id="start-button"><i class="fa fa-play"></i></button>
+                                    <button id="pause-button"><i class="fa fa-pause"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <br>
                     <br>
                 </div>
-                <br>
-                <br>
             </div>
 
             <div id="chat-container">
                 <div id="chat-header">
-                    Professora Flávia
+                    <label style="justify-content: center" id="titulo">Assistente Virtual</label>
                     <button id="chat-toggle-btn">
                         <i id="chat-minimize" class="fa fa-chevron-down"></i>
                     </button>
@@ -102,6 +117,7 @@
                     <button id="send-button">Enviar</button>
                 </div>
             </div>
+
 
 
             <footer class="footer navbar-fixed-bottom">
@@ -117,20 +133,80 @@
     <script src="~/js/main.js"></script>
     <script src="~/js/areaProf.js"></script>
     <script src="/js/ChatGptAssistent.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.39/Tone.js"></script>
 
     <script>
-            document.getElementById("chat-toggle-btn").addEventListener("click", function() {
-            var chatContainer = document.getElementById("chat-container");
-            var chatToggleButton = document.getElementById("chat-toggle-btn");
-            var chatMinimize = document.getElementById("chat-minimize");
-            chatContainer.classList.toggle("chat-hidden");
+        document.getElementById("chat-toggle-btn").addEventListener("click", function() {
+                               var chatContainer = document.getElementById("chat-container");
+                               var chatToggleButton = document.getElementById("chat-toggle-btn");
+                               var chatMinimize = document.getElementById("chat-minimize");
+                               chatContainer.classList.toggle("chat-hidden");
 
-            if (chatContainer.classList.contains("chat-hidden")) {
-                chatMinimize.className = "fa fa-chevron-up";
-            } else {
-                chatMinimize.className = "fa fa-chevron-down";
-            }
-        });
+                               if (chatContainer.classList.contains("chat-hidden")) {
+                                   chatMinimize.className = "fa fa-chevron-up";
+                                   document.getElementById("titulo").style.display = "none";
+                                   document.getElementById("chat-input").style.display = "none";
+                                   document.getElementById("chat-body").style.display = "none";
+                               } else {
+                                   chatMinimize.className = "fa fa-chevron-down";
+                                   document.getElementById("titulo").style.cssText = "Assistente Virtual";
+                                   document.getElementById("chat-input").style.display = "block";
+                                   document.getElementById("chat-body").style.display = "block";
+                               }
+                           });
+
+
+                  var synth = new Tone.Synth({
+                   oscillator: {
+                       type: "sine" // Altere o tipo de oscilador para "sine" (senoidal)
+                   },
+                   envelope: {
+                       attack: 0.001, // Reduza o tempo de ataque para tornar o som mais curto
+                       release: 0.1 // Reduza o tempo de release para tornar o som mais curto
+                   }
+               }).toDestination();
+
+               var loop = null;
+               var isPlaying = false;
+
+               function playClick(bpm) {
+                   if (isPlaying) {
+                       stopClick();
+                   }
+
+                   loop = new Tone.Loop(function(time) {
+                       synth.triggerAttackRelease("C6", "16n", time); // Aumente a oitava para tornar o som mais agudo
+                   }, "4n");
+
+                   Tone.Transport.bpm.value = bpm;
+                   Tone.Transport.start();
+
+                   loop.start(0);
+                   isPlaying = true;
+               }
+
+               function stopClick() {
+                   if (isPlaying) {
+                       loop.stop(0);
+                       Tone.Transport.stop();
+                       isPlaying = false;
+                   }
+               }
+
+               var startButton = document.getElementById("start-button");
+               var pauseButton = document.getElementById("pause-button");
+               var bpmInput = document.getElementById("bpm");
+
+               startButton.addEventListener("click", function() {
+                   var bpm = parseInt(bpmInput.value);
+                   if (bpm > 0) {
+                       playClick(bpm);
+                   }
+               });
+
+               pauseButton.addEventListener("click", function() {
+                   stopClick();
+               });
 
     </script>
     <script>

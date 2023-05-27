@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zwL/gXyjve9XZ4UaMb1TfrxhhQewk/4WkTjGc2mQTUo=",
+  "Hash": "Vppi7kwAocS1q31U6R3rJmJ5+EbirUCr/vQ+ejuIE/U=",
   "Source": "GestaoMusical_Web",
   "BasePath": "_content/GestaoMusical_Web",
   "Mode": "Default",
@@ -457,6 +457,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\main.js"
+    },
+    {
+      "Identity": "D:\\VisualProjetos\\GestaoMusical\\escola-da-flavinha\\GestaoMusical_Web\\wwwroot\\js\\metronomo.js",
+      "SourceId": "GestaoMusical_Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\VisualProjetos\\GestaoMusical\\escola-da-flavinha\\GestaoMusical_Web\\wwwroot\\",
+      "BasePath": "_content/GestaoMusical_Web",
+      "RelativePath": "js/metronomo.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\metronomo.js"
     },
     {
       "Identity": "D:\\VisualProjetos\\GestaoMusical\\escola-da-flavinha\\GestaoMusical_Web\\wwwroot\\js\\popper.js",
