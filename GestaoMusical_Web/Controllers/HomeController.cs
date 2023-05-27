@@ -98,6 +98,7 @@ namespace GestaoMusical_Web.Controllers
                     {
                         var anotacoes = RespostaSQL.Rows[0].Field<String>("anotacao");
                         ViewData["Anotacao"] = anotacoes;
+                        GetMetodo(anotacoes);
                     }
                     return View("Anotacao");
 
@@ -115,7 +116,7 @@ namespace GestaoMusical_Web.Controllers
                 string id = Convert.ToString(_id);
                 DateTime data = DateTime.Now;
                 string dataCurta = data.ToShortDateString();
-                string dataFormatada = data.ToString("MM/dd/YYYY");
+                string dataFormatada = data.ToString("MM/dd/yyyy");
                 #endregion
                 //string SelectSQL = $"SELECT * FROM sc_alunas.tb_alunas WHERE id_alunas = '{id}' ";
                 //var resposta = banco.SelecionaDados(SelectSQL);
@@ -170,7 +171,7 @@ namespace GestaoMusical_Web.Controllers
         {
             Banco banco = new Banco();
             ViewData["Nome"] = _name;
-            var scriptSQL = "SELECT * FROM sc_alunas.tb_anotacao WHERE id_anotacao =" + dataid + " AND id_alunas = "+_id+" ORDER BY id_anotacao DESC limit 1";
+            var scriptSQL = "SELECT * FROM sc_alunas.tb_anotacao WHERE id_anotacao =" + dataid + " AND id_alunas = " + _id + " ORDER BY id_anotacao DESC limit 1";
             DataTable RespostaSQL = banco.SelecionaDados(scriptSQL);
             if (RespostaSQL.Rows.Count > 0)
             {
@@ -245,6 +246,25 @@ namespace GestaoMusical_Web.Controllers
             var chatGptResponse = choices.First?["text"]?.ToString();
 
             return Json(new { message = chatGptResponse });
+        }
+
+        public string GetMetodo(string anotacoes)
+        {
+            string metodoCCB = "Método CCB";
+            int startIndex = anotacoes.IndexOf(metodoCCB, StringComparison.OrdinalIgnoreCase);
+
+            if (startIndex != -1)
+            {
+                int endIndex = anotacoes.IndexOf("\n", startIndex);
+                if (endIndex != -1)
+                {
+                    return anotacoes.Substring(startIndex, endIndex - startIndex).Trim();
+                }
+            }
+
+            return string.Empty;
+
+            return "";
         }
 
     }
